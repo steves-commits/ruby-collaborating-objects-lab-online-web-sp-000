@@ -21,6 +21,6 @@ class Song
  end
  
  def self.all 
-   Artist.song 
+   Artist.song_name 
  end
 end
