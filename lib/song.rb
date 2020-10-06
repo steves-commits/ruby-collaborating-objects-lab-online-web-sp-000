@@ -4,6 +4,7 @@ class Song
   
  def initialize(name)
    @name = name 
+   @songs = []
  end
  
  def self.new_by_filename(file)
@@ -20,7 +21,7 @@ class Song
    artist.add_song(self)
  end
  
- def Song.all 
-   self.name
+ def self.all 
+   @songs
  end
 end
